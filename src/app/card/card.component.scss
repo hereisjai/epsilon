@@ -1,0 +1,59 @@
+h1{
+    font-size:24px;
+}
+
+.card-container{
+    width:auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    .card{
+        width:290px;
+        // filter: drop-shadow(0 2px 6px rgba(0,0,0,0.2));
+        box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+        .imageHolder{
+            height:200px;
+            img{
+                height:100%;
+                width: 100%;
+            }
+        }
+
+        .contentHolder{
+            padding-left:16px;
+            padding-top: 20px;
+            padding-bottom: 14px;
+            h2{
+                font-family:OpenSans-SemiBold;
+                color: #0F5EF0;
+                font-size:15px;
+                margin: 0;
+                padding:0;
+            }
+            p{
+                display: block;
+                font-size: 12px;
+                color:#7A8594;
+                margin: 0;
+                &.description{
+                    padding-top:18px;
+                    font-family: Open-Sans-Bold;
+                    text-transform: uppercase;
+
+                }
+                &.edited{
+                    padding-top:20px;
+                    font-family: Open-Sans-Regular;
+                }
+            }
+        }
+
+        &:hover{
+    //         filter: drop-shadow(0 3px 18px rgba(0,0,0,0.6));
+            box-shadow: 0 3px 18px rgb(0 0 0 / 60%);
+
+        }
+
+    }
+}

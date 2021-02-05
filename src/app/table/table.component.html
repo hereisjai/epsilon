@@ -1,0 +1,31 @@
+<h1 >Table Page</h1>
+
+
+<div class="table-container" >
+<table *ngIf="tableData | async as data" aria-label="Product Table">
+    <thead>
+        <tr>
+            <th scope="col">Product Name
+                <button aria-label="sort by Name" [class.des]="sortSign.name" [class.on]="sortModel.name" (click)="sortBy('name', data)"></button>
+                </th>
+            <th scope="col">Price
+                <button aria-label="sort by Price" [class.des]="sortSign.price" [class.on]="sortModel.price" (click)="sortBy('price', data)"></button>
+            </th>
+            <th scope="col">Category
+                <button aria-label="sort by Category" [class.des]="sortSign.category"  [class.on]="sortModel.category" (click)="sortBy('category', data)"></button>
+            </th>
+        </tr>
+    </thead>
+
+    <tbody >
+
+        <tr *ngFor="let i of data">
+            <td id="name">{{i.name}}</td>
+            <td id="price">{{i.price}}</td>
+            <td id="category">{{i.category}}</td>
+        </tr>
+    </tbody>
+
+</table>
+
+</div>

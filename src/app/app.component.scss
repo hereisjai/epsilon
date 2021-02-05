@@ -1,0 +1,28 @@
+
+nav{
+    width:80%;
+    margin: auto;
+    ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type:none;
+    li{
+        a{
+            text-decoration: none;
+            // color:#ffffff;
+            color: #221F4D;
+            // background-color: #000;
+            width:100px;
+            height: auto;
+            padding:2px;
+            &:visited{
+                text-decoration: none;
+            color: #221F4D;
+            }
+          }
+          color:#ffffff;
+
+    }
+
+}
+}

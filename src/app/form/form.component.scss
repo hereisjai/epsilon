@@ -1,0 +1,54 @@
+h1{
+    font-size:24px;
+}
+
+
+.form-container{
+    width:auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+   .form {
+    padding: 40px;
+    border:2px solid #eee;
+    width: 400px;
+    font-family: Open-Sans-Regular;
+    font-size: 12px;
+        label{
+            display: block;
+            margin-bottom: 20px;
+                    color:#221F4d;
+                    font-family: Open-Sans-Regular;
+                    font-size: 12px;
+
+            input{
+                height:30px;
+                padding:1px 0px 0px 1px;
+                width: 100%;
+                color:#221F4d;
+                font-family: Open-Sans-Regular;
+                font-size: 12px;
+                &::placeholder{
+                    color:#221F4d80;
+                }
+            }
+            &:last-child{
+                margin-bottom: 30px;
+            }
+        }
+        button{
+            font-family: Open-Sans-Regular;
+            font-size: 12px;
+            width: 100%;
+            padding:2px;
+            height: 30px;
+            color:#ffffff;
+            background-color: #0F5EF0;
+            &:hover{
+            background-color: #0C4BC0;
+            }
+        }
+    }
+}

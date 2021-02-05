@@ -1,0 +1,102 @@
+
+
+h1{
+    font-size:24px;
+}
+
+.table-container{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    table{
+        width: 80%;
+        font-size: 12px;
+        border-spacing: 0    ;
+
+        caption{
+            font-size: 12px;
+            font-family:OpenSans-SemiBold;
+            text-align: left;
+            padding:10px 15px;
+        }
+        th{
+            padding:10px 15px;
+            width: 30%;
+            text-align: left;
+            font-family:OpenSans-SemiBold;
+            color: #221F4D;
+            background-color: #cbd6e2;
+            &:not(:last-child){
+                border-right: 1px solid #221f4d;
+            }
+            &:first-child{
+                width:40%
+            }
+            button{
+                width: 8px;
+                height: 8px;
+                padding: 0;
+                border-color: transparent;
+                border-width: 0;
+                float: right;
+                opacity: 0.5;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-top: 8px solid #221f4d;
+                background-color: transparent;
+                &.on{
+                    opacity: 1;
+                }
+                // &.asc {
+
+                // }
+                &.des {
+                    border-bottom: 8px solid #221f4d;
+                    border-top: 0px;
+                    background-color: transparent;
+                }
+                // &:focus{
+                //     outline: none;
+                // }
+            }
+        }
+        tr{
+            &:nth-child(odd){
+                background-color: #ffffff;
+            }
+            &:nth-child(even){
+                background-color: #f5f8fa;
+            }
+        td{
+            padding:10px 15px;
+            font-family:Open-Sans-Regular;
+            color: #221F4D;
+            &#name{
+                width:40%
+            }
+            &#price{
+                width:30%
+
+            }
+            &#category{
+                width:30%
+            }
+
+
+        }
+        &:hover{
+            background-color: #E7EFFD;
+            td{
+                border:1px solid #0F5EF0;
+                &:not(:last-child){
+                border-right: 0px;
+                }
+                &:not(:first-child){
+                    border-left: 0px;
+                 }
+            }
+        }
+        }
+
+    }
+}
