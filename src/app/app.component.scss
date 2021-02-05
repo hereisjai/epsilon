@@ -1,28 +1,48 @@
 
 nav{
-    width:80%;
+
+    width:20%;
     margin: auto;
     ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type:none;
+    justify-items: space-around;
+    font-family: 'OpenSans-SemiBold';
+    border-bottom: 1px solid #221f4d;
+    padding: 10px;
+    font-size: 20px;
+
     li{
         a{
             text-decoration: none;
-            // color:#ffffff;
             color: #221F4D;
-            // background-color: #000;
             width:100px;
             height: auto;
             padding:2px;
             &:visited{
                 text-decoration: none;
-            color: #221F4D;
+                color: #221F4D;
+            };
+            &.is-active{
+                background-color: bisque;
+            }
+            &:hover,&:focus{
+                cursor: pointer;
+                background-color: bisque;
             }
           }
           color:#ffffff;
+
 
     }
 
 }
 }
+
+
+@media only screen and (max-width: 768px) {
+    nav{
+        width:80%;
+    }
+  }

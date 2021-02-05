@@ -20,3 +20,11 @@ body{
     src: url(assets/fonts/OpenSans-SemiBold.ttf) format("opentype");
   }
 
+
+
+  @media only screen and (max-width: 720px) {
+    body{
+      margin: auto;
+      width:100%;
+    }
+  }
